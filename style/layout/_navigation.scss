@@ -1,0 +1,55 @@
+.main-nav{
+        height: 100px;
+        background-color: rgb(78, 78, 78);
+        display: flex;
+        flex-direction: row;
+        border-bottom: 2px solid black;
+        padding: 5px 60px 5px 40px;
+        // top rigt bottom left
+        .menu-link{
+            height:auto;
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+            svg{
+                height: 100%;
+                width: auto;
+            }
+ } 
+
+.plane-button path{
+    fill: rgb(255, 255, 255);
+    transition: fill 0.5ms ease;
+}
+
+.plane-button:hover path {
+    fill: red;
+}
+
+.main-nav .plane-button{
+    margin-right: auto;
+}
+
+.flex-container {
+    display: flex;
+    position: relative;
+    width: auto;
+    background-color: rgb(255, 0, 0);
+    
+}
+
+img{
+    object-fit:cover;
+    height: auto;
+    width: 50%;
+}
+
+.story-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 15  px;
+    border: 3px solid green;
+  }
