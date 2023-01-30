@@ -63,9 +63,20 @@ img {
 .grid--container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 10px;
   align-items: stretch;
   padding-top: 20px;
+}
+.grid--container .card {
+  max-width: 300px;
+  min-width: none;
+  justify-self: center;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.grid--container .card img {
+  width: 100%;
 }
 
 img {
